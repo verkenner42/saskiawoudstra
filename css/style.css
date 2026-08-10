@@ -2,7 +2,11 @@
   --color-bg: #ffffff;
   --color-text: #1c1c1c;
   --color-muted: #6b6b6b;
-  --color-accent: #2f4f4f;
+  --color-rufous: #A4220E;
+  --color-gamboge: #E89415;
+  --color-night: #141414;
+  --color-offwhite: #EBEBEB;
+  --color-accent: var(--color-rufous);
   --color-line: #e5e5e5;
   --max-width: 780px;
 }
@@ -11,31 +15,40 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-offwhite);
   line-height: 1.6;
 }
 
 header {
+  background: #ffffff;
   border-bottom: 1px solid var(--color-line);
 }
 
 nav {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.5rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
 nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--color-text);
   font-size: 1.05rem;
+}
+
+nav .brand img {
+  height: 32px;
+  width: 32px;
 }
 
 nav ul {
@@ -54,23 +67,30 @@ nav a {
 
 nav a:hover,
 nav a[aria-current="page"] {
-  color: var(--color-text);
+  color: var(--color-rufous);
 }
 
 main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1.25rem 4rem;
+  background: #ffffff;
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
   margin-bottom: 0.5rem;
+  color: var(--color-rufous);
 }
 
 h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
   font-size: 1.4rem;
   margin-top: 2.5rem;
+  color: var(--color-night);
 }
 
 p {
@@ -101,6 +121,40 @@ footer .footer-inner {
 
 footer a {
   color: var(--color-muted);
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.block {
+  background: var(--color-gamboge);
+  border-radius: 4px;
+  padding: 1.75rem 1.5rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.block h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+}
+
+.block p {
+  font-size: 0.92rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .blocks {
+    grid-template-columns: 1fr;
+  }
 }
 
 .placeholder-notice {
