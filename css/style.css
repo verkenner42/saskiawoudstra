@@ -9,13 +9,58 @@
   --color-accent: var(--color-rufous);
   --color-line: #e5e5e5;
   --max-width: 780px;
+
+  /* Type scale — every font-size on the site references one of these */
+  --fs-xs: 0.875rem;   /* footer, small labels */
+  --fs-sm: 1rem;       /* secondary body text (blocks, list detail) */
+  --fs-base: 1.125rem; /* default paragraph */
+  --fs-md: 1.25rem;    /* lead / intro / quote */
+  --fs-lg: 1.375rem;   /* list lead-ins, h3 */
+  --fs-h2: clamp(1.375rem, 1.1rem + 1.2vw, 1.75rem);
+  --fs-h1: clamp(1.9rem, 1.3rem + 2.8vw, 2.75rem);
+
+  --font-heading: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-400-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/quicksand-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/quicksand-700.woff2') format('woff2');
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
+  font-family: var(--font-serif);
+  font-size: var(--fs-base);
   color: var(--color-text);
   background: var(--color-offwhite);
   line-height: 1.6;
@@ -35,7 +80,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem 1.5rem;
-  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-heading);
 }
 
 nav .brand {
@@ -45,7 +90,7 @@ nav .brand {
   font-weight: 700;
   text-decoration: none;
   color: var(--color-text);
-  font-size: 1.05rem;
+  font-size: var(--fs-sm);
 }
 
 nav .brand img {
@@ -65,7 +110,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--color-muted);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 nav a:hover,
@@ -85,28 +130,29 @@ nav a[aria-current="page"] {
 }
 
 h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: var(--fs-h1);
   line-height: 1.15;
   margin: 0 0 1rem;
   color: var(--color-night);
 }
 
 h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--fs-h2);
   margin: 0 0 1rem;
   color: var(--color-night);
 }
 
 p {
+  font-size: var(--fs-base);
   margin: 1rem 0;
 }
 
 .intro {
-  font-size: 1.2rem;
+  font-size: var(--fs-md);
   margin: 0 0 1.75rem;
 }
 
@@ -151,15 +197,15 @@ p {
 .band-gamboge p { color: #ffffff; }
 
 .quote-intro {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.95rem;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
   color: var(--color-muted);
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .quote {
-  font-size: 1.2rem;
+  font-size: var(--fs-md);
   text-align: center;
   color: var(--color-muted);
   max-width: 560px;
@@ -170,55 +216,51 @@ p {
   list-style: none;
   margin: 1.5rem 0;
   padding: 0;
+  counter-reset: recognize;
 }
 
 .recognize li {
+  counter-increment: recognize;
   position: relative;
-  padding-left: 2rem;
+  padding-left: 2.75rem;
   margin-bottom: 1.4rem;
-  font-size: 1.1rem;
 }
 
 .recognize li::before {
-  content: "?";
+  content: "0" counter(recognize);
   position: absolute;
   left: 0;
-  top: -0.1rem;
-  width: 1.4rem;
-  height: 1.4rem;
-  line-height: 1.4rem;
-  text-align: center;
-  border-radius: 50%;
-  background: var(--color-rufous);
-  color: #ffffff;
-  font-family: 'Quicksand', sans-serif;
+  top: 0.1rem;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
+  color: var(--color-rufous);
 }
 
 .recognize li strong {
   display: block;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.05rem;
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 700;
   margin-bottom: 0.2rem;
 }
 
 .recognize li span {
   color: var(--color-muted);
-  font-size: 0.98rem;
+  font-size: var(--fs-sm);
 }
 
 /* CTA button */
 .cta {
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
   background: var(--color-rufous);
   padding: 0.85rem 1.75rem;
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   letter-spacing: 0.02em;
 }
 
@@ -230,8 +272,8 @@ p {
 
 footer {
   border-top: 1px solid var(--color-line);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  font-size: var(--fs-xs);
   color: var(--color-muted);
 }
 
@@ -260,19 +302,19 @@ footer a {
   background: var(--color-gamboge);
   border-radius: 4px;
   padding: 1.75rem 1.5rem;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-heading);
 }
 
 .block h3 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   margin: 0 0 0.6rem;
   color: #ffffff;
 }
 
 .block p {
-  font-size: 0.92rem;
+  font-size: var(--fs-sm);
   color: #ffffff;
   margin: 0;
 }
@@ -299,22 +341,6 @@ footer a {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-
-  h1 {
-    font-size: 1.9rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  .intro {
-    font-size: 1.05rem;
-  }
-
-  .recognize li {
-    font-size: 1rem;
-  }
 }
 
 .placeholder-notice {
@@ -322,8 +348,8 @@ footer a {
   border: 1px solid #f0e0a0;
   padding: 1rem 1.25rem;
   border-radius: 4px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
   color: #6b5a1e;
   margin-bottom: 2rem;
 }
