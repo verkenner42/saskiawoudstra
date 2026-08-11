@@ -48,9 +48,45 @@ Praktisch effect op tekst: de CTA moet wederkerig klinken — "kijken of het kli
 CTA-tekst (al doorgevoerd op de site):
 *"Als dit herkenbaar is, denk ik graag met je mee. Plan een kort, vrijblijvend kennismakingsgesprek — geen verplichtingen, gewoon kijken of het klikt."*
 
-## 6. Nog open — vervolgvragen voor deze brief
-- [ ] Toon van stem (hoe wil je overkomen — sluit aan bij directe, feitelijke communicatiestijl, geen poeha)
-- [ ] Scope van de site: welke pagina's horen wel/niet thuis op saskiawoudstra.com (bijv. "het visje" hoort bij denkverkenning.nl, niet hier)
+## 6. Doelgroep van de site zelf: warm, niet koud
+
+De site is gebouwd voor warme leads — mensen die via netwerk, LinkedIn of een sponsor al een vonk van herkenning voelden — niet voor koude, toevallige bezoekers. Dat is een bewuste keuze, geen tekortkoming: geen aandacht besteden aan "stopping power" voor onbekende bezoekers, wel aan standhouden op het moment dat iemand al enigszins vertrouwen heeft. (Zie ook 1a.)
+
+## 7. Overtuigingstechnieken — wel/niet
+
+Achtergrond: Saskia heeft ervaring als conversiespecialist (NLP, Cialdini). Toetsing welke principes hier passen, gezien doelgroep (wantrouwend richting gladde beloftes, ingestapt via warme introductie) en aanprijsprincipe (laten zien, niet overtuigen).
+
+**Past, in ingehouden vorm — al aanwezig, niet expliciet als tactiek inzetten:**
+- *Reciprocity*: LinkedIn-observaties delen zonder aanbod, geven voor je vraagt.
+- *Commitment & consistency*: lichte eerste stap (vrijblijvend kennismakingsgesprek), geen grote directe vraag.
+- *Liking*: eigen, authentieke stem (Recept voor structuur, persoonlijke toon) — niet aangeleerd, wel bewaakt.
+- *Authority*: via specificiteit en een concrete aanpak tonen (de Nebig-werkwijze), niet via badges of "expert"-taal.
+
+**Vermijden:**
+- *Social proof*: te vroeg — één klant, nog lopend traject. Niet leunen op "bedrijven vertrouwen mij" totdat er meer bewijs is.
+- *Scarcity*: ("beperkte plekken", "nu boeken") — botst met het principe geen CTA-druk.
+- *Sturende NLP-taal* (embedded commands, presupposities): risicovol bij déze doelgroep — mensen die al wantrouwend zijn richting onbetrouwbare informatie herkennen sturende taal snel, en dat werkt averechts.
+
+## 8. Toon van stem
+
+Gebaseerd op de bestaande Home-tekst, niet op een generiek sjabloon:
+- Korte, directe zinnen afgewisseld met langere, reflectieve zinnen.
+- Geen marketingtaal ("innovatief", "toonaangevend", "excellent", "passie").
+- Vragen om tot nadenken te zetten, niet om te overtuigen.
+- Eerste persoon, persoonlijk maar niet uitweidend.
+- Ingehouden zelfvertrouwen: specifiek zijn in plaats van superlatieven gebruiken.
+- Concrete beelden/metaforen (wandelen, bakken) boven abstracte claims.
+
+Toetsbare regels:
+1. Geen woorden als "innovatief", "toonaangevend", "excellent", "passie".
+2. Korte zinnen mogen; niet elke zin hoeft een bijzin.
+3. Claims altijd onderbouwd met iets concreets — nooit een blote bewering.
+4. Vragen stellen mag, mits uitnodigend tot nadenken, niet retorisch-overtuigend.
+5. Zelfvertrouwen tonen via specificiteit, niet via superlatieven.
+
+## 9. Scope van de site — nog open
+
+- [ ] Welke pagina's horen wel/niet thuis op saskiawoudstra.com, verder dan al besloten (het visje → denkverkenning, Services → gemerged met Diensten, Blogs → on hold, Recept voor structuur → blijft, uit hoofdmenu, gelinkt vanuit Over mij)
 
 ## Toetsvragen per tekst
 
