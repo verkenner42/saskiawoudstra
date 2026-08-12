@@ -376,6 +376,29 @@ footer a {
   }
 }
 
+/* Dark mode: volgt de systeeminstelling van de bezoeker, geen JS nodig */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #141414;
+    --color-text: #EBEBEB;
+    --color-muted: #9a9a9a;
+    --color-offwhite: #141414;
+    --color-line: #2a2a2a;
+  }
+
+  header {
+    background: #1c1c1c;
+  }
+
+  h1, h2 {
+    color: var(--color-text);
+  }
+
+  .band-white {
+    background: #1c1c1c;
+  }
+}
+
 .placeholder-notice {
   background: #fdf6e3;
   border: 1px solid #f0e0a0;
