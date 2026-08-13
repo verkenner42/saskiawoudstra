@@ -451,6 +451,19 @@ footer a {
   color: var(--color-muted);
 }
 
+.form-thanks {
+  display: none;
+  margin-top: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--color-rufous);
+}
+
+.form-thanks:target {
+  display: block;
+}
+
 @media (max-width: 680px) {
   .contact-grid {
     grid-template-columns: 1fr;
