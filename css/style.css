@@ -182,6 +182,10 @@ p {
   color: var(--color-muted);
 }
 
+.hero .intro-lg {
+  font-size: var(--fs-lg);
+}
+
 /* Bands */
 .band-white { background: #ffffff; }
 .band-offwhite { background: var(--color-offwhite); }

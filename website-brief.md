@@ -1,6 +1,8 @@
 # Website-brief — saskiawoudstra.com
 
-Laatste update: 11 augustus 2026. Referentiepunt voor elke tekstkeuze op de site — bij twijfel over een tekst, toets 'm hieraan voordat je 'm aanpast.
+Laatste update: 13 augustus 2026. Referentiepunt voor elke tekstkeuze op de site — bij twijfel over een tekst, toets 'm hieraan voordat je 'm aanpast.
+
+Voor de onderliggende missie, propositie, doelgroep en kanaalstrategie: zie `0_Fundament/SW Data Advies — Propositie & Strategie.md` (leidend document, kan losstaand van deze brief updaten). Vastgelegde richtlijn daaruit: saskiawoudstra.com is de zakelijke thuisbasis voor data strategie specifiek — niet verbreed naar andere domeinen (zoals onderwijs), ook niet als de onderliggende vaardigheid domeinonafhankelijk is.
 
 ## 1. Doel
 
